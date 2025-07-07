@@ -786,15 +786,17 @@ textarea {
 .privacy-check-label {
   display: flex;
   position: relative;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
 
 .privacy-check {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: 0;
-  left: 0;
+
   width: 16px;
   height: 16px;
   margin-right: 8px;
@@ -824,4 +826,5 @@ textarea {
   color: #4d5ae5;
   text-decoration: underline;
   cursor: pointer;
+  margin-left: 3px;
 }
