@@ -194,10 +194,12 @@ textarea {
 }
 
 .hero-banner-button {
+  display: block;
   min-width: 169px;
   height: 56px;
   border-radius: 4px;
   padding: 16px 32px;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -205,6 +207,7 @@ textarea {
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: #4d5ae5;
+  border: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -565,7 +568,7 @@ textarea {
   padding: 8px 24px;
   min-width: 165px;
   height: 40px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
@@ -651,6 +654,9 @@ textarea {
   display: flex;
   flex-direction: column;
 }
+.input-set .textarea {
+  margin-bottom: 16px;
+}
 
 .modal-close-btn {
   display: flex;
@@ -718,6 +724,10 @@ textarea {
   max-width: 100%;
   resize: none;
   margin-bottom: 0px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .recall-input::placeholder {
@@ -772,7 +782,7 @@ textarea {
   margin-bottom: 24px;
 }
 
-.privacy-check-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -789,11 +799,10 @@ textarea {
 /**/
 .privacy-check-label input:checked ~ .privacy-check {
   background-color: #404bbf;
-}
-
-.privacy-check-label input:checked ~ .privacy-check .vector {
+  border: none;
   fill: #f4f4fd;
 }
+
 /**/
 
 .privacy-check-label {
@@ -801,16 +810,16 @@ textarea {
   position: relative;
   align-items: center;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
 .privacy-check {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-
+  fill: transparent;
   width: 16px;
   height: 16px;
   margin-right: 8px;
@@ -821,7 +830,6 @@ textarea {
 }
 
 .vector {
-  fill: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
