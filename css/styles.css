@@ -51,6 +51,7 @@ img {
 }
 
 input,
+label,
 textarea {
   padding: 0;
   margin: 0;
@@ -786,9 +787,6 @@ textarea {
 }
 
 .privacy-check-label {
-  display: flex;
-  position: relative;
-  align-items: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -828,5 +826,4 @@ textarea {
   color: #4d5ae5;
   text-decoration: underline;
   cursor: pointer;
-  margin-left: 3px;
 }
